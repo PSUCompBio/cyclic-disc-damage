@@ -1,0 +1,14 @@
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=00:10:00
+#PBS -j oe
+#PBS -l pmem=50mb
+
+module load matlab/R2015a
+
+echo " "
+echo " "
+echo "Job started on 'hostname' at 'date'"
+matlab -r DE_Miner_1023.m 
+echo " "
+echo "Job ended at 'date'"
+echo " " 
